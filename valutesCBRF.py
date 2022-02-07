@@ -2,7 +2,7 @@ import requests, xml.etree.ElementTree as ET
 while 1:
     res=requests.get('http://www.cbr.ru/scripts/XML_daily.asp').text
     root=ET.fromstring(res)
-    print(' [left valute] = ... [right valute] ')
+    print('1 [left valute] = ... [right valute] ')
     left=input('Input num. or alphabet. left code of valute: ')
     right=input('Input num. or alphabet. right code of valute: ')
     if left.isdigit():
